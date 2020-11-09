@@ -6799,6 +6799,24 @@ body.is-preload .items.onload-fade-in > * > .inner {
   position: relative;
 }
 
+#header {
+  padding: 0 1em;
+}
+#header .row {
+  margin: .5em 0;
+  display: flex;
+  align-items: center;
+}
+#header #logo h1 {
+  font-size: 1.5em;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+#header #logo a {
+  text-decoration: none;
+}
 #header #nav {
   list-style-type: none;
   display: flex;
@@ -6809,9 +6827,14 @@ body.is-preload .items.onload-fade-in > * > .inner {
   margin: 0;
 }
 #header #nav li {
-  display: block;
+  isplay: block;
   position: relative;
   float: left;
+  padding-left: 3em;
+  font-size: .8em;
+}
+#header #boton .buttom {
+  float: right;
 }
 
 .skdslider {

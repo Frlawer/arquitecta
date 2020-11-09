@@ -9,7 +9,7 @@
 								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<p>&copy; Borgo Arquitectura. Design: <a href="http://frlawer.com.ar">Frlawer</a>.</p>
 						</div>
 					</footer>
 
@@ -29,7 +29,7 @@
 						jQuery('#sliderarq').skdslider({
 						slideSelector: '.slide',
 						delay:5000,
-						animationSpeed:2000,
+						animationSpeed:1500,
 						showNextPrev:true,
 						showPlayButton:false,
 						autoSlide:true,

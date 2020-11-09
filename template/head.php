@@ -22,16 +22,16 @@
 				<div class="row">
 					<div class="col-3" id="logo">
 						<a href="#">
-							<img src="https://amasr.com.ar/wp-content/uploads/2018/01/logo-black_1.png" alt="">
+							<h1>Borgo Arquitectura</h1>
 						</a>
 					</div>
 					<div class="col-6" id="nav">
 						<ul>
-							<li>HOME</li>
-							<li>ESTUDIO</li>
-							<li>PROYECTOS</li>
-							<li>SERVICIOS</li>
-							<li>CONTACTO</li>
+							<li><a href="">HOME</a></li>
+							<li><a href="">ESTUDIO</a></li>
+							<li><a href="">PROYECTOS</a></li>
+							<li><a href="">SERVICIOS</a></li>
+							<li><a href="">CONTACTO</a></li>
 						</ul>
 
 					</div>
