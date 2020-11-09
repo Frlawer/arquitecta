@@ -1,0 +1,28 @@
+{
+    "remotePath": "./public_html",
+    "host": "c2001439.ferozo.com",
+    "username": "c2001439",
+    "password": "zoMIbe26ro",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store",
+        "\\arquitecta.code-workspace"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}
