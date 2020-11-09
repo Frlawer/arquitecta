@@ -47,8 +47,8 @@
         this.pivotImage = this.slides.eq(0).find('img');
         this.markup = {
             navs: '<li>%d</li>',
-            prev: '<a class="prev"></a>',
-            next: '<a class="next"></a>',
+            prev: '<a class="prev"><i class="fas fa-angle-left"></i></a>',
+            next: '<a class="next"><i class="fas fa-angle-right"></i></a>',
             play: '<a class="play"></a>'
         }
 

@@ -6826,7 +6826,7 @@ body.is-preload .items.onload-fade-in > * > .inner {
 .skdslider {
   width: 100%;
   position: relative;
-  display: block;
+  display: flex;
   overflow: hidden;
 }
 .skdslider .slide {
@@ -6838,37 +6838,34 @@ body.is-preload .items.onload-fade-in > * > .inner {
   border: 0;
 }
 .skdslider ul.slide-navs {
-  bottom: 20px;
-  left: 50%;
-  position: absolute;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 35% auto;
+  z-index: 999;
 }
 .skdslider ul.slide-navs li {
   float: left;
-  background: url("../../images/slider/slide-bg.png") no-repeat scroll 0 0 transparent;
-  height: 12px;
-  width: 12px;
-  margin-right: 4px;
+  margin-right: 25px;
   cursor: pointer;
+  content: '';
+  border: 3px solid white;
+  border-radius: 100px;
+  width: 30px;
+  height: 10px;
 }
 .skdslider ul.slide-navs li.active {
-  background: url("../../images/slider/slide-bg-active.png") no-repeat scroll 0 0 transparent;
+  background: aliceblue;
 }
 .skdslider .slide-desc {
-  background: url("../../images/slider/slide_desc.png") repeat scroll 0 0 transparent;
-  left: 0;
+  left: 5%;
   padding: 0 15px 0 15px;
   position: absolute;
   bottom: 15%;
   max-width: 85%;
-  display: inline-block;
+  display: inline;
 }
 .skdslider .slide-desc > h2 {
-  color: #CFDB0C;
-  font-family: 'Oswald';
-  font-size: 25px;
+  color: white;
+  font-size: 3em;
   margin-bottom: 10px;
   margin-top: 10px;
   text-transform: uppercase;
@@ -6889,26 +6886,24 @@ body.is-preload .items.onload-fade-in > * > .inner {
   text-decoration: underline;
 }
 .skdslider a.prev {
-  background: url("../../images/slider/left.png") no-repeat scroll 0 0 transparent;
-  width: 35px;
-  height: 35px;
+  font-size: 2em;
   display: block;
   cursor: pointer;
   position: absolute;
   top: 50%;
   left: 2%;
   margin-top: -17px;
+  color: white;
 }
 .skdslider a.next {
-  background: url("../../images/slider/right.png") no-repeat scroll 0 0 transparent;
-  width: 35px;
-  height: 35px;
+  font-size: 2em;
   display: block;
   cursor: pointer;
   position: absolute;
   top: 50%;
   right: 2%;
   margin-top: -17px;
+  color: white;
 }
 .skdslider a.play {
   background: url("../../images/slider/play.png") no-repeat scroll center center transparent;
@@ -6935,6 +6930,9 @@ body.is-preload .items.onload-fade-in > * > .inner {
 
 /*Some Responsive CSS */
 @media screen and (max-width: 767px) {
+  .skdslider {
+    display: flex;
+  }
   .skdslider .slide-desc > h2 {
     font-size: 20px;
     margin-bottom: 5px;
