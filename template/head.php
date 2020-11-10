@@ -21,7 +21,7 @@
 			<section class="wrapper style1" id="header">
 				<div class="row">
 					<div class="col-3" id="logo">
-						<a href="#">
+						<a href="./">
 							<h1>Borgo Arquitectura</h1>
 						</a>
 					</div>

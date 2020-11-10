@@ -6827,7 +6827,7 @@ body.is-preload .items.onload-fade-in > * > .inner {
   margin: 0;
 }
 #header #nav li {
-  isplay: block;
+  display: block;
   position: relative;
   float: left;
   padding-left: 3em;
@@ -6835,10 +6835,6 @@ body.is-preload .items.onload-fade-in > * > .inner {
 }
 #header #boton .buttom {
   float: right;
-}
-
-.skdslider {
-  max-height: 650px !important;
 }
 
 #slider {
@@ -6851,6 +6847,7 @@ body.is-preload .items.onload-fade-in > * > .inner {
   position: relative;
   display: flex;
   overflow: hidden;
+  max-height: 650px !important;
 }
 .skdslider .slide {
   display: none;
