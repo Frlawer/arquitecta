@@ -138,7 +138,7 @@ body {
 }
 
 body, input, select, textarea {
-  font-family: "Nanum Gothic", Helvetica, sans-serif;
+  font-family: "BankGothic Md BT", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.65;
@@ -174,6 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.375;
   letter-spacing: -0.05em;
+  font-family: "Century Gothic", sans-serif;
   margin: 0 0 1rem 0;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -6867,9 +6868,9 @@ body.is-preload .items.onload-fade-in > * > .inner {
   margin-right: 25px;
   cursor: pointer;
   content: '';
-  border: 3px solid white;
+  border: 1px solid #636363;
   border-radius: 100px;
-  width: 30px;
+  width: 10px;
   height: 10px;
 }
 .skdslider ul.slide-navs li.active {

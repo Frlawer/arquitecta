@@ -22,7 +22,7 @@
 				<div class="row">
 					<div class="col-3" id="logo">
 						<a href="./">
-							<h1>Borgo Arquitectura</h1>
+							<img src="./images/logo.png" width="100%">
 						</a>
 					</div>
 					<div class="col-6" id="nav">
