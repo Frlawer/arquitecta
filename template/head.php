@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Story by HTML5 UP</title>
+		<title>Borgo Arquitectura</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -27,8 +27,8 @@
 					</div>
 					<div class="col-6" id="nav">
 						<ul>
-							<li><a href="">HOME</a></li>
-							<li><a href="">ESTUDIO</a></li>
+							<li><a href="">INICIO</a></li>
+							<li><a href="#sliderarq">ESTUDIO</a></li>
 							<li><a href="">PROYECTOS</a></li>
 							<li><a href="">SERVICIOS</a></li>
 							<li><a href="">CONTACTO</a></li>

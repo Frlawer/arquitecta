@@ -1,120 +1,13 @@
-<?php include('template/one.php'); ?>
+<?php 
+	include('template/one.php'); 
+	include('template/nosotros.php');
+	include('template/vivuni.php');
+	include('template/hoteleria.php');
+	include('template/industrial.php');
+	include('template/galeria.php');
+	include('template/contacto.php');
+?>
 
-<!-- Two -->
-	<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-		<div class="content">
-			<h2>ESTUDIO</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-			<ul class="actions stacked">
-				<li><a href="#" class="button">Leer más</a></li>
-			</ul>
-		</div>
-		<div class="image">
-			<img src="images/arqui.jpg" alt="" />
-		</div>
-	</section>
-
-<!-- Five -->
-<section class="wrapper style1 align-center">
-		<div class="inner">
-			<h2>Galería de Proyectos</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-		</div>
-
-		<!-- Gallery -->
-			<div class="gallery style2 medium lightbox onscroll-fade-in">
-				<article>
-					<a href="images/sliderarq/img01.jpg" class="image">
-						<img src="images/sliderarq/thumb/thumb01.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<h3>Proyecto 1</h3>
-						<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-						<ul class="actions fixed">
-							<li><span class="button small">Detalles</span></li>
-						</ul>
-					</div>
-				</article>
-				<article>
-					<a href="images/sliderarq/img02.jpg" class="image">
-						<img src="images/sliderarq/thumb/thumb02.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<h3>Proyecto 1</h3>
-						<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-						<ul class="actions fixed">
-							<li><span class="button small">Detalles</span></li>
-						</ul>
-					</div>
-				</article>
-				<article>
-					<a href="images/sliderarq/img03.jpg" class="image">
-						<img src="images/sliderarq/thumb/thumb03.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<h3>Proyecto 1</h3>
-						<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-						<ul class="actions fixed">
-							<li><span class="button small">Detalles</span></li>
-						</ul>
-					</div>
-				</article>
-				<article>
-					<a href="images/sliderarq/img04.jpg" class="image">
-						<img src="images/sliderarq/thumb/thumb04.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<h3>Proyecto 1</h3>
-						<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-						<ul class="actions fixed">
-							<li><span class="button small">Detalles</span></li>
-						</ul>
-					</div>
-				</article>
-				<article>
-					<a href="images/sliderarq/img05.jpg" class="image">
-						<img src="images/sliderarq/thumb/thumb05.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<h3>Proyecto 1</h3>
-						<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-						<ul class="actions fixed">
-							<li><span class="button small">Detalles</span></li>
-						</ul>
-					</div>
-				</article>
-				
-			</div>
-
-	</section>
-
-<!-- Three -->
-	<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-		<div class="content">
-			<h2>Tempus adipiscing</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-			<ul class="actions stacked">
-				<li><a href="#" class="button">Learn More</a></li>
-			</ul>
-		</div>
-		<div class="image">
-			<img src="images/spotlight02.jpg" alt="" />
-		</div>
-	</section>
-
-<!-- Four -->
-	<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-		<div class="content">
-			<h2>Pharetra etiam nulla</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-			<ul class="actions stacked">
-				<li><a href="#" class="button">Learn More</a></li>
-			</ul>
-		</div>
-		<div class="image">
-			<img src="images/spotlight03.jpg" alt="" />
-		</div>
-	</section>
 
 
 <!-- Six -->
@@ -184,32 +77,5 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 				</section>
 			</div>
-		</div>
-	</section>
-
-<!-- Seven -->
-	<section class="wrapper style1 align-center">
-		<div class="inner medium">
-			<h2>Contactanos</h2>
-			<form method="post" action="#">
-				<div class="fields">
-					<div class="field half">
-						<label for="name">Nombre</label>
-						<input type="text" name="name" id="name" value="" />
-					</div>
-					<div class="field half">
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" value="" />
-					</div>
-					<div class="field">
-						<label for="message">Mensaje</label>
-						<textarea name="message" id="message" rows="6"></textarea>
-					</div>
-				</div>
-				<ul class="actions special">
-					<li><input type="submit" name="submit" id="submit" value="Enviar Mensaje" /></li>
-				</ul>
-			</form>
-
 		</div>
 	</section>
