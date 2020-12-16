@@ -27,9 +27,9 @@
 					</div>
 					<div class="col-6" id="nav">
 						<ul>
-							<li><a href="">INICIO</a></li>
-							<li><a href="#sliderarq">ESTUDIO</a></li>
-							<li><a href="">PROYECTOS</a></li>
+							<li><a href="#nav">INICIO</a></li>
+							<li><a href="#nosotros" class="smooth-scroll">ESTUDIO</a></li>
+							<li><a href="#vivuni" class="smooth-scroll">PROYECTOS</a></li>
 							<li><a href="">SERVICIOS</a></li>
 							<li><a href="">CONTACTO</a></li>
 						</ul>
