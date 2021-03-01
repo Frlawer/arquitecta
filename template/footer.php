@@ -17,6 +17,7 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
@@ -28,7 +29,7 @@
 				    jQuery(document).ready(function(){
 						jQuery('#sliderarq').skdslider({
 						slideSelector: '.slide',
-						delay:5000,
+						delay:4000,
 						animationSpeed:1500,
 						showNextPrev:true,
 						showPlayButton:false,

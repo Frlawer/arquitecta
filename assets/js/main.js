@@ -8,7 +8,10 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-		$wrapper = $('#wrapper');
+		$wrapper = $('#wrapper'),
+		$nav = $('#nav'),
+		$header = $('#header'),
+		$navPanelToggle, $navPanel, $navPanelInner;
 
 	// Breakpoints.
 		breakpoints({
@@ -26,6 +29,114 @@
 				$body.removeClass('is-preload');
 			}, 100);
 		});
+	// Dropdowns.
+	$('#nav > ul').dropotron({
+		mode: 'fade',
+		speed: 350,
+		noOpenerFade: true,
+		alignment: 'center'
+	});
+
+
+	// Nav.
+// full nav
+
+// Toggle.
+$navPanelToggle = $(
+	'<a href="#navPanel" id="navPanelToggle">Menu</a>'
+)
+	.appendTo($wrapper);
+
+// Change toggle styling once we've scrolled past the header.
+	$header.scrollex({
+		bottom: '5vh',
+		enter: function() {
+			$navPanelToggle.removeClass('alt');
+		},
+		leave: function() {
+			$navPanelToggle.addClass('alt');
+		}
+	});
+
+// Panel.
+$navPanel = $(
+	'<div id="navPanel">' +
+		'<nav>' +
+		'</nav>' +
+		'<a href="#navPanel" class="close"></a>' +
+	'</div>'
+)
+	.appendTo($body)
+	.panel({
+		delay: 500,
+		hideOnClick: true,
+		hideOnSwipe: true,
+		resetScroll: true,
+		resetForms: true,
+		side: 'right',
+		target: $body,
+		visibleClass: 'is-navPanel-visible'
+	});
+
+// Get inner.
+	$navPanelInner = $navPanel.children('nav');
+
+// Move nav content on breakpoint change.
+	var $navContent = $nav.children();
+
+	breakpoints.on('>medium', function() {
+
+		// NavPanel -> Nav.
+			$navContent.appendTo($nav);
+
+		// Flip icon classes.
+			$nav.find('.icons, .icon')
+				.removeClass('alt');
+
+			$nav.find('ul')
+				.removeClass('alt');
+	});
+
+	breakpoints.on('<=small', function() {
+
+		// Nav -> NavPanel.
+			$navContent.appendTo($navPanelInner);
+
+		// Flip icon classes.
+			$navPanelInner.find('.icons, .icon')
+				.addClass('alt');
+			
+			$nav.find('ul')
+				.addClass('alt');
+
+	});
+
+	// 	// Button.
+	// 	$navPannelToggle = $(
+	// 		'<div id="navButton">' +
+	// 			'<a href="#navPanel" class="toggle">+</a>' +
+	// 		'</div>'
+	// 	)
+	// 		.appendTo($wrapper);
+
+	// // Panel.
+	// 	$navPannel = $(
+	// 		'<div id="navPanel">' +
+	// 			'<nav>' +
+	// 				$('#nav').navList() +
+	// 			'</nav>' +
+	// 		'</div>'
+	// 	)
+	// 		.appendTo($body)
+	// 		.panel({
+	// 			delay: 500,
+	// 			hideOnClick: true,
+	// 			hideOnSwipe: true,
+	// 			resetScroll: true,
+	// 			resetForms: true,
+	// 			target: $body,
+	// 			visibleClass: 'navPanel-visible'
+	// 		});
 
 	// Browser fixes.
 

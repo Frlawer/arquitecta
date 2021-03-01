@@ -1,5 +1,5 @@
 <!-- Seven -->
-<section class="wrapper style1 align-center">
+<section class="wrapper style1 align-center" id="contacto">
 		<div class="inner medium">
 			<h2>Contactanos</h2>
 			<form method="post" action="#">

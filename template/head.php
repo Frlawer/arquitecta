@@ -22,21 +22,18 @@
 				<div class="row">
 					<div class="col-3" id="logo">
 						<a href="./">
-							<img src="./images/logo.png" width="100%">
+							<img src="./images/logo.png" width="50%">
 						</a>
 					</div>
 					<div class="col-6" id="nav">
 						<ul>
-							<li><a href="#nav">INICIO</a></li>
+							<li><a href="/">INICIO</a></li>
 							<li><a href="#nosotros" class="smooth-scroll">ESTUDIO</a></li>
 							<li><a href="#vivuni" class="smooth-scroll">PROYECTOS</a></li>
-							<li><a href="">SERVICIOS</a></li>
-							<li><a href="">CONTACTO</a></li>
+							<li><a href="#servicios">SERVICIOS</a></li>
+							<li><a href="#contacto">CONTACTO</a></li>
 						</ul>
 
-					</div>
-					<div class="col-3" id="boton">
-						<button class="buttom">Contacto</button>
 					</div>
 				</div>
 			</section>
