@@ -9,6 +9,6 @@
 			</ul>
 		</div>
 		<div class="image">
-			<img src="images/proyectos/6/img_6_01.jpg" alt="" />
+			<img src="images/sliderarq/Image00004.jpg" alt="" />
 		</div>
 	</section>

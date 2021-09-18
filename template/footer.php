@@ -24,6 +24,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/splide/dist/js/splide.min.js"></script>
+			<script>
+				new Splide( '.splide', {
+					type   : 'slide',
+					autoplay : true,
+					speed : 800,
+					pauseOnHover : false
+				} ).mount();
+			</script>
 			<script src="assets/src/skdslider.min.js"></script>
 			<script>
 				    jQuery(document).ready(function(){

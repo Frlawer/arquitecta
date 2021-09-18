@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Link to the file hosted on your server, -->
+		<link rel="stylesheet" href="assets/splide/dist/css/splide.min.css">
 	</head>
 	<body class="is-preload">
 
@@ -20,12 +22,12 @@
 		<!-- header -->
 			<section class="wrapper style1" id="header">
 				<div class="row">
-					<div class="col-3" id="logo">
+					<div class="col-3 col-12-medium" id="logo">
 						<a href="./">
-							<img src="./images/logo.png" width="50%">
+							<img src="./images/logo.png" width="100%">
 						</a>
 					</div>
-					<div class="col-6" id="nav">
+					<div class="col-9 col-12-medium" id="nav">
 						<ul>
 							<li><a href="/">INICIO</a></li>
 							<li><a href="#nosotros" class="smooth-scroll">ESTUDIO</a></li>
