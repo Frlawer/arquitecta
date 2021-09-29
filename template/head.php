@@ -31,9 +31,11 @@
 						<ul>
 							<li><a href="/">INICIO</a></li>
 							<li><a href="#nosotros" class="smooth-scroll">ESTUDIO</a></li>
-							<li><a href="#vivuni" class="smooth-scroll">PROYECTOS</a></li>
-							<li><a href="#servicios">SERVICIOS</a></li>
-							<li><a href="#contacto">CONTACTO</a></li>
+							<li><a href="proyectos" class="smooth-scroll">PROYECTOS</a></li>
+							<li><a href="#industrial" class="smooth-scroll">INDUSTRIAL</a></li>
+							<li><a href="#viviendas" class="smooth-scroll">VIVIENDAS</a></li>
+							<li><a href="#hoteles" class="smooth-scroll">HOTELES</a></li>
+							<li><a href="#contacto" class="smooth-scroll">CONTACTO</a></li>
 						</ul>
 
 					</div>

@@ -1,6 +1,11 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Work+Sans:wght@100;200;300;400;700;900&display=swap");
+@font-face {
+  font-family: 'Avant Garde';
+  src: url("../../assets/webfonts/ITCAvantGardeStd-XLtCn.woff" format("woff"));
+}
 /*
 	Story by HTML5 UP
 	html5up.net | @ajlkn
@@ -138,7 +143,7 @@ body {
 }
 
 body, input, select, textarea {
-  font-family: "Nanum Gothic", Helvetica, sans-serif;
+  font-family: "Avant Garde", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.65;
@@ -6840,7 +6845,7 @@ body.is-preload .items.onload-fade-in > * > .inner {
   text-decoration: none;
 }
 #header #nav {
-  font-family: "BankGothic Md BT", sans-serif;
+  font-family: "Work Sans", sans-serif;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -6855,6 +6860,9 @@ body.is-preload .items.onload-fade-in > * > .inner {
   float: left;
   padding-left: 3em;
   font-size: .8em;
+}
+#header #nav li a {
+  text-decoration: none;
 }
 #header #boton .buttom {
   float: right;

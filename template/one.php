@@ -4,8 +4,8 @@
     <div class="splide">
         <div class="splide__track">
             <ul class="splide__list">
-                <li class="splide__slide"><img src="images/sliderarq/Image00002.jpg" /></li>
                 <li class="splide__slide"><img src="images/sliderarq/Image00008.jpg" /></li>
+                <li class="splide__slide"><img src="images/sliderarq/Image00002.jpg" /></li>
                 <li class="splide__slide"><img src="images/sliderarq/Image00006.jpg" /></li>
             </ul>
         </div>
