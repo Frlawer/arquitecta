@@ -13,8 +13,8 @@ class Img extends DBconn {
 	var $id;
 	var $nombre;
 	var $url;
-	var $create_at;
-	var $update_at;
+	var $catId;
+	var $thumb;
 
     /**
      * constructor
@@ -22,10 +22,12 @@ class Img extends DBconn {
      * @param string $nombre
      * @param string $url
      */
-	function __construct($id = 0, $nombre = '', $url = ''){
+	function __construct($id = 0, $nombre = '', $url = '', $catId = 0, $thumb = 0){
 		$this->id = $id;
 		$this->nombre = $nombre;
 		$this->url = $url;
+		$this->catId = $catId;
+		$this->thumb = $thumb;
 	}
     
     /**
@@ -36,11 +38,15 @@ class Img extends DBconn {
         $this->query = "INSERT INTO img (
 			nombre,
             url,
+            categoria_id,
+            thumb,
             create_at,
             update_at
 			) VALUES(
 			'".$this->nombre."',
 			'".$this->url."',
+			'".$this->catId."',
+			'".$this->thumb."',
             date('Y-m-d H:i:s'),
             date('Y-m-d H:i:s')
 			)";
@@ -64,6 +70,8 @@ class Img extends DBconn {
         $this->query = "UPDATE img SET
 			nombre = '".$this->nombre."',
 			url = '".$this->url."',
+			url = '".$this->catId."',
+			url = '".$this->thumb."',
             create_at = null,
             update_at = date('Y-m-d H:i:s')
 			WHERE id = ".$this->id."";
@@ -85,7 +93,18 @@ class Img extends DBconn {
      * @access public
      */
     public function selectCategoria($categoria) {
-        $this->query = "SELECT * FROM img WHERE categoria = " . $categoria;
+        $this->query = "SELECT * FROM img WHERE categoria_id = " . $categoria . " AND nombre LIKE '%000%'" ;
+        $this->get_results_from_query();
+        // retorna un array con los resultados $this->rows;
+    }
+
+    /**
+     * Select el primer dato de cada categoria.
+     * @access public
+     * @param int $idCat
+     */
+    public function select1($idProyecto) {
+        $this->query = "SELECT * FROM img WHERE url LIKE '%/" . $idProyecto . "/%'";
         $this->get_results_from_query();
         // retorna un array con los resultados $this->rows;
     }

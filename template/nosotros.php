@@ -10,7 +10,7 @@
 			</ul>
 		</div>
 		<div class="image">
-			<img src="images/arqui.jpg" alt="" />
+			<img src="images/Isologotipo-integrado.png" alt="" />
 		</div>
 		
 	</section>

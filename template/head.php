@@ -31,7 +31,7 @@
 						<ul>
 							<li><a href="/">INICIO</a></li>
 							<li><a href="#nosotros" class="smooth-scroll">ESTUDIO</a></li>
-							<li><a href="proyectos" class="smooth-scroll">PROYECTOS</a></li>
+							<li><a href="?view=proyectos" class="smooth-scroll">PROYECTOS</a></li>
 							<li><a href="#industrial" class="smooth-scroll">INDUSTRIAL</a></li>
 							<li><a href="#viviendas" class="smooth-scroll">VIVIENDAS</a></li>
 							<li><a href="#hoteles" class="smooth-scroll">HOTELES</a></li>

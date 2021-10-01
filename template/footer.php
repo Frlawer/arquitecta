@@ -9,7 +9,7 @@
 								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-							<p>&copy; Borgo Arquitectura. Design: <a href="http://frlawer.com.ar">Frlawer</a>.</p>
+							<p>&copy; Borgo Arquitectura - Todos los derechos reservados.</p>
 						</div>
 					</footer>
 

@@ -8,6 +8,6 @@
 			</ul>
 		</div>
 		<div class="image">
-			<img src="images/proyectos/5/img_5_01.jpg" alt="" />
+			<img src="images/viviendas/01/viv01000.jpg" alt="" />
 		</div>
 	</section>
