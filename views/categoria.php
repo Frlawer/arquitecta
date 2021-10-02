@@ -1,20 +1,26 @@
 <?php
 require_once('./clases/Img.php'); 
 require_once('./clases/Categoria.php'); 
+require_once('./clases/Proyecto.php'); 
 // si existe el numero de proyecto muestro la galería.
 if (isset($_GET['n']) == 'viv01'):
 
-	$proyecto = $_GET['n'];
+	$proyectoId = $_GET['n'];
 	
 	$img = new Img();
-	$img->select1($proyecto);
+	$img->select1($proyectoId);
 	$datos = $img->rows;
+
+	// solicito datos proyecto
+	$proyecto = new Proyecto();
+	$proyecto->getProyecto($proyectoId);
+	$datosP = $proyecto->rows[0];
 	?>
 	<!-- Four -->
 	<section class="wrapper style1 align-center" id="categoria">
 		<div class="inner">
-			<h2>Nombre proyecto</h2>
-			<p>Todas las fotos.</p>
+			<h2><?php echo $datosP['nombre'] ?></h2>
+			<blockquote><?php echo $datosP['resenia'] ?></blockquote>
 		</div>
 		<div class="gallery style1 lightbox onload-fade-in">
 			<?php
@@ -42,27 +48,32 @@ elseif(isset($_GET['id']) == 1):
 	$imgLista->select1($lista);
 	$datos = $imgLista->rows;
 
-?>
+	
+	?>
 	<!-- Four -->
 	<section class="wrapper style1 align-center" id="categoria">
 		<div class="inner">
 			<h2>Viviendas Unifamiliares</h2>
 			<p>Selecciona para ver más fotos</p>
 		</div>
-		<div class="items style1 small onscroll-fade-in">
-			<?php foreach ($datosImg as $key => $value) : 
-
-			$datos = $value['url'];
-			list($images, $cat, $proyecto, $img) = explode("/", $datos);
-			?>
+		<div class="items style1 small onload-fade-in">
+			<?php foreach ($datosImg as $key => $value) : ?>
 				<section>
-					<a href="?view=categoria&id=<?php echo $value['categoria_id'];?>&n=<?php echo $img; ?>">
-						<img src="<?php echo $value['url']?>" width="100%" alt="Alternate text" />
+					<a href="?view=categoria&id=<?php echo $value['categoria_id'];?>&n=<?php echo $value['subCategoria']; ?>">
+						<img src="<?php echo $value['url']?>" width="100%" alt="<?php echo $value['nombre'] ?>" />
 					</a>
-					
-					<h3>One</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-
+				<?php
+				// Solicito datos de proyecto
+				$proyectoG = new Proyecto();
+				$proyectoG->getProyectoCat($value['subCategoria']);
+				$datosG = $proyectoG->rows[0];
+				?>
+					<h3>
+				<?php echo $datosG['nombre']; ?>
+					</h3>
+					<p>
+						<?php echo mb_substr($datosG['resenia'], 0, 50, 'UTF-8')."..."; ?>
+					</p>
 				</section>
 			<?php endforeach; ?>
 		</div>
