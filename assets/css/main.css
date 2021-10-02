@@ -6808,6 +6808,11 @@ body.is-preload .items.onload-fade-in > * > .inner {
 #header {
   padding: 0 1em;
 }
+@media screen and (max-width: 980px) {
+  #header {
+    padding: 3em 3em 0;
+  }
+}
 #header .row {
   margin: .5em 0;
   display: flex;
