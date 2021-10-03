@@ -84,10 +84,41 @@ class Proyecto extends DBconn {
     /**
      * Devuelve el proyecto segun id
      * @param int $idProyecto
+     * @param int $idCat
      * @return array
      */
-    public function getProyecto($idProyecto){
-        $this->query = "SELECT * FROM proyecto WHERE id = " . $idProyecto;
+    public function getProyecto($idProyecto, $idCat){
+        $this->query = "SELECT * FROM proyecto WHERE subCategoria = " . $idProyecto . " AND categoria_id = " . $idCat . " LIMIT 1";
         $this->get_results_from_query();
+    }
+
+    /**
+     * Devuelve los proyectos de la categoria
+     * @param int $idCategoria
+     * @return array
+     */
+    public function getProyectos($idCategoria){
+        $this->query = "SELECT * FROM proyecto WHERE categoria_id = " . $idCategoria;
+        $this->get_results_from_query();
+    }
+
+    /**
+     * nombrar categoria
+     * @param int $idCat
+     * @return string
+     */
+    public function nombraCat($idCat){
+        switch ($idCat) {
+            case 1:
+                $nombre = 'vivienda';
+                break;
+            case 2:
+                $nombre = 'hoteles';
+                break;
+            case 3:
+                $nombre = 'hoteles';
+                break;
+        }
+        return $nombre;
     }
 }
