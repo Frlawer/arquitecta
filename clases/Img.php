@@ -13,7 +13,8 @@ class Img extends DBconn {
 	var $id;
 	var $nombre;
 	var $url;
-	var $catId;
+	var $categoria_id;
+	var $subCategoria;
 	var $thumb;
 
     /**
@@ -22,11 +23,19 @@ class Img extends DBconn {
      * @param string $nombre
      * @param string $url
      */
-	function __construct($id = 0, $nombre = '', $url = '', $catId = 0, $thumb = 0){
+	function __construct(
+        $id = 0, 
+        $nombre = '', 
+        $url = '', 
+        $categoria_id = 0, 
+        $subCategoria = '', 
+        $thumb = 0
+    ){
 		$this->id = $id;
 		$this->nombre = $nombre;
 		$this->url = $url;
-		$this->catId = $catId;
+		$this->categoria_id = $categoria_id;
+		$this->subCategoria = $subCategoria;
 		$this->thumb = $thumb;
 	}
     
@@ -39,13 +48,15 @@ class Img extends DBconn {
 			nombre,
             url,
             categoria_id,
+            subCategoria,
             thumb,
             create_at,
             update_at
 			) VALUES(
 			'".$this->nombre."',
 			'".$this->url."',
-			'".$this->catId."',
+			'".$this->categoria_id."',
+			'".$this->subCategoria."',
 			'".$this->thumb."',
             date('Y-m-d H:i:s'),
             date('Y-m-d H:i:s')
@@ -70,7 +81,8 @@ class Img extends DBconn {
         $this->query = "UPDATE img SET
 			nombre = '".$this->nombre."',
 			url = '".$this->url."',
-			url = '".$this->catId."',
+			url = '".$this->categoria_id."',
+			url = '".$this->subCategoria."',
 			url = '".$this->thumb."',
             create_at = null,
             update_at = date('Y-m-d H:i:s')
@@ -102,9 +114,24 @@ class Img extends DBconn {
      * Select el primer dato de cada categoria.
      * @access public
      * @param int $idCat
+     * @param int $proyId
+     * @return array
      */
-    public function select1($idProyecto) {
-        $this->query = "SELECT * FROM img WHERE url LIKE '%/" . $idProyecto . "/%'";
+    public function getImgs($idCat, $proyId) {
+        $this->query = "SELECT * FROM img WHERE categoria_id = " . $idCat . " AND subCategoria = " . $proyId;
+        $this->get_results_from_query();
+        // retorna un array con los resultados $this->rows;
+    }
+
+    /**
+     * get one img.
+     * @access public
+     * @param int $catId
+     * @param string $subCat
+     * @return string
+     */
+    public function getImg($catId, $subCat) {
+        $this->query = "SELECT * FROM img WHERE categoria_id = " . $catId . " AND subCategoria = " . $subCat . " LIMIT 1";
         $this->get_results_from_query();
         // retorna un array con los resultados $this->rows;
     }
