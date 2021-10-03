@@ -53,24 +53,7 @@ class Categoria extends DBconn {
  * @return string
  */
     public function nombreCat($id){
-        if ($id = 1) :
-            $nombre = 'Viviendas';
-        elseif($id = 2):
-            $nombre = 'Hoteles';
-        else:
-            $nombre = 'Industria';
-        endif;
-        return $nombre;
-    }
-
-/**
- * Extrae el proyecto del nombre
- * @param string $nombre
- * @return string
- */
-    public function nProyecto($nombre){
-        $datos = $nombre;
-        list($images, $cat, $proyecto, $img) = explode("/", $datos);
-        return $proyecto;
+        $this->query = "SELECT * FROM categoria WHERE id = " . $id . " LIMIT 1 ";
+        $this->get_results_from_query();
     }
 }
