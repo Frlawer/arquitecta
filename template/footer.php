@@ -27,26 +27,25 @@
 			<script src="assets/splide/dist/js/splide.min.js"></script>
 			<script>
 				new Splide( '.splide', {
-					type   : 'slide',
-					autoplay : true,
-					speed : 800,
-					pauseOnHover : false
+					type   : 'fade',
+					perPage : 1,
+					gap: 0,
+					cover: true,
+					heightRatio: 0.4,
 				} ).mount();
 			</script>
-			<script src="assets/src/skdslider.min.js"></script>
 			<script>
-				    jQuery(document).ready(function(){
-						jQuery('#sliderarq').skdslider({
-						slideSelector: '.slide',
-						delay:4000,
-						animationSpeed:1500,
-						showNextPrev:true,
-						showPlayButton:false,
-						autoSlide:true,
-						animationType:'fading'
-						});
-					});
+				document.addEventListener( 'DOMContentLoaded', function () {
+					new Splide( '#card-slider', {
+						perPage    : 1,
+						gap: 0,
+						width : '100vw',
+						height: '100vh',
+						autoplay : true,
+						speed : 800,
+						pauseOnHover : false
+					} ).mount();
+				} );
 			</script>
-
 	</body>
 </html>

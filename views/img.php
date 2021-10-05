@@ -18,25 +18,23 @@ if (isset($_GET['n'])):
 	$imgData = $img->rows;
 
 	?>
-	<!-- Four -->
-	<section class="wrapper style1 align-center" id="categoria">
-		<div class="inner">
-			<h2><?php echo $proyectoData['nombre'] ?></h2>
-			<blockquote><?php echo $proyectoData['resenia'] ?></blockquote>
+	<div><h2><?php echo $proyectoData['nombre'] ?></h2></div>
+	<div class="splide2">
+		<div class="splide__track">
+			<ul class="splide__list">
+
+				<?php foreach($imgData as $key => $value): ?>
+
+				<li class="splide__slide">
+					<img src="<?php echo $value['url']?>" alt="<?php echo $value['nombre']?>">
+				</li>
+
+				<?php endforeach;?>
+
+			</ul>
 		</div>
-		<div class="gallery style2 small lightbox onload-fade-in">
-			<?php
-			foreach ($imgData as $key => $value) { ?>
-			<article>
-				<a href="<?php echo $value['url']?>" class="image">
-					<img src="<?php echo $value['url']?>" alt="Alternate text" />
-				</a>
-				
-			</article>
-			<?php } ?>
-		</div>
-			
-	</section>
+	</div>
+
 	
 <?php
 // Sino muestro la lista de proyectos
@@ -84,3 +82,32 @@ elseif(isset($_GET['id'])):
 include_once('proyectos.php');
 
 endif; ?>
+
+<script>
+	import Splide from '@splidejs/splide';
+	import Grid from '@splidejs/splide-extension-grid';
+
+	new Splide( '#splide2', {
+		type       : 'loop',
+		height     : '4rem',
+		perPage    : 2,
+		perMove    : 1,
+		grid       : {
+			// You can define rows/cols instead of dimensions.
+			dimensions: [ [ 1, 1 ], [ 2, 2 ], [ 2, 1 ] ],
+			gap: [
+				row: '6px',
+				col: '6px',
+			],
+		},
+		breakpoints: {
+			600: {
+				height : '8rem',
+				perPage: 1,
+				grid   : {
+					dimensions: [ [ 2, 2 ], [ 1, 1 ], [ 2, 1 ] ],
+				}
+			}
+		}
+	} ).mount( { Grid } );
+</script>

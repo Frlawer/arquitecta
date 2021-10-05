@@ -7,7 +7,7 @@
 <html>
 	<head>
 		<title>Borgo Arquitectura</title>
-		<meta charset="utf-8" />
+	<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="\images\Isologotipo-negro.png" />
@@ -25,7 +25,7 @@
 				<div class="row">
 					<div class="col-3 col-12-medium" id="logo">
 						<a href="./">
-							<img src="./images/logo.png" width="100%">
+							<img src="./images/borgo.png">
 						</a>
 					</div>
 					<div class="col-9 col-12-medium" id="nav">

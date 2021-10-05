@@ -8,8 +8,8 @@
 		<!-- Gallery -->
 			<div class="gallery style2 medium lightbox onscroll-fade-in">
 				<article>
-					<a href="images/sliderarq/img01.jpg" class="image">
-						<img src="images/sliderarq/thumb/thumb01.jpg" alt="" />
+					<a href="images/slider/slider10.jpg" class="image">
+						<img src="images/slider/slider10.jpg" alt="" />
 					</a>
 					<div class="caption">
 						<h3>Diseño arquitectónico</h3>
@@ -20,8 +20,8 @@
 					</div>
 				</article>
 				<article>
-					<a href="images/sliderarq/img02.jpg" class="image">
-						<img src="images/sliderarq/thumb/thumb02.jpg" alt="" />
+					<a href="images/slider/slider10.jpg" class="image">
+						<img src="images/slider/slider10.jpg" alt="" />
 					</a>
 					<div class="caption">
 						<h3>Dirección de obra / Ejecutiva</h3>
@@ -32,8 +32,8 @@
 					</div>
 				</article>
 				<article>
-					<a href="images/sliderarq/img03.jpg" class="image">
-						<img src="images/sliderarq/thumb/thumb03.jpg" alt="" />
+					<a href="images/slider/slider10.jpg" class="image">
+						<img src="images/slider/slider10.jpg" alt="" />
 					</a>
 					<div class="caption">
 						<h3>Construcción / Administración</h3>
@@ -44,8 +44,8 @@
 					</div>
 				</article>
 				<article>
-					<a href="images/sliderarq/img04.jpg" class="image">
-						<img src="images/sliderarq/thumb/thumb04.jpg" alt="" />
+					<a href="images/slider/slider10.jpg" class="image">
+						<img src="images/slider/slider10.jpg" alt="" />
 					</a>
 					<div class="caption">
 						<h3>Interior Design</h3>

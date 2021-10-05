@@ -1,45 +1,57 @@
 
 <!-- One -->
-<section class="banner orient-left content-align-left image-position-right fullscreen">
+<!-- <section class="wrapper">
     <div class="splide">
         <div class="splide__track">
             <ul class="splide__list">
-                <li class="splide__slide"><img src="images/sliderarq/Image00008.jpg" /></li>
-                <li class="splide__slide"><img src="images/sliderarq/Image00002.jpg" /></li>
-                <li class="splide__slide"><img src="images/sliderarq/Image00006.jpg" /></li>
+                <li class="splide__slide"><img src="images/slider/slider01.jpg" width="100%"/></li>
+                <li class="splide__slide"><img src="images/slider/slider02.jpg" width="100%"/></li>
+                <li class="splide__slide"><img src="images/slider/slider03.jpg" width="100%"/></li>
+                <li class="splide__slide"><img src="images/slider/slider04.jpg" width="100%"/></li>
+                <li class="splide__slide"><img src="images/slider/slider05.jpg" width="100%"/></li>
+                <li class="splide__slide"><img src="images/slider/slider06.jpg" width="100%"/></li>
+                <li class="splide__slide"><img src="images/slider/slider07.jpg" width="100%"/></li>
+                <li class="splide__slide"><img src="images/slider/slider08.jpg" width="100%"/></li>
+                <li class="splide__slide"><img src="images/slider/slider09.jpg" width="100%"/></li>
+                <li class="splide__slide"><img src="images/slider/slider10.jpg" width="100%"/></li>
+                <li class="splide__slide"><img src="images/slider/slider11.jpg" width="100%"/></li>
             </ul>
         </div>
     </div>
-</section>
-<section class="banner orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-    <!-- <div id="sliderarq">
-        <div class="slide">
-            <img src="images/sliderarq/Image00001.jpg" />
-            <div class="slide-desc">
-                <h2>Proyecto 1</h2>
-                <a class="more" href="#">Ver más</a>
-            </div>
+</section> -->
+<section class="wrapper">
+    <div id="card-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="images/slider/slider01.jpg" width="100%"/>
+                    <h2>VIVIENDAS UNIFAMILIARES</h2>
+                    <div class="caja">
+                        VER MÁS >
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="images/slider/slider01.jpg" width="100%"/>
+                    <h2>VIVIENDAS UNIFAMILIARES</h2>
+                    <div class="caja">
+                        VER MÁS >
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="images/slider/slider01.jpg" width="100%"/>
+                    <h2>VIVIENDAS UNIFAMILIARES</h2>
+                    <div class="caja">
+                        VER MÁS >
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="images/slider/slider01.jpg" width="100%"/>
+                    <h2>VIVIENDAS UNIFAMILIARES</h2>
+                    <div class="caja">
+                        VER MÁS >
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="slide">
-            <img src="sliderarq/Image00002.jpg" />
-            <div class="slide-desc">
-                <h2>Proyecto 2</h2>
-                <a class="more" href="#">Ver más</a>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="sliderarq/Image00003.jpg" />
-            <div class="slide-desc">
-                <h2>Proyecto 3</h2>
-                <a class="more" href="#">Ver más</a>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="sliderarq/Image00004.jpg" />
-            <div class="slide-desc">
-                <h2>Proyecto 4</h2>
-                <a class="more" href="#">Ver más</a>
-            </div>
-        </div>
-    </div> -->
+    </div>
 </section>
