@@ -2,16 +2,10 @@
 <section class="wrapper style1 align-left" id="categoria">
 	<div class="inner">
 		<h2>Proyectos</h2>
-		<blockquote>
-			Nuestros diseños se realizan partiendo de un estudio pormenorizado de la región, a través del uso de materiales de la zona y teniendo en cuenta los factores climáticos, topográficos, siempre con la premisa de dar diseño y función.
-			<p>En la mayor parte de nuestra trayectoria, los diseños fueron de montaña, aplicando estandartes de Higiene y seguridad, cálculos estructurales acorde a la zona sismo resistentes y diagramas de evolución de obra, teniendo en cuenta le clima inestable de la zona. </p>
-			Con más de 20000 m2 realizados, entre ellas establecimientos turísticos, viviendas unifamiliares y obras institucionales, el estudio se ha afianzado en los armar proyectos, siempre teniendo en cuenta, en simultáneo, el trabajo con nuestros asesores en los diferentes servicios de infraestructura.
-			<p>La alta calidad de nuestra arquitectura nos ha permitido Trasladar nuestra trayectoria y experiencia a la ciudad de Neuquen y alrededores</p>
-		</blockquote>
 	</div>
-	<div class="gallery style1 big lightbox onscroll-fade-in">
+	<div class="gallery style1 big onscroll-fade-in">
 		<article>
-			<a href="images/viviendas/01/viv01000.jpg" class="image">
+			<a href="?view=categoria&id=1" class="image">
 				<img src="images/viviendas/01/viv01000.jpg" alt="">
 			</a>
 			<div class="caption">
@@ -23,7 +17,7 @@
 			</div>
 		</article>
 		<article>
-			<a href="images/hoteles/01/hotel01000.jpg" class="image">
+			<a href="?view=categoria&id=2" class="image">
 				<img src="images/hoteles/01/hotel01000.jpg" alt="">
 			</a>
 			<div class="caption">
@@ -35,7 +29,7 @@
 			</div>
 		</article>
 		<article>
-			<a href="images/industrial/02/ind02000.jpg" class="image">
+			<a href="?view=categoria&id=3" class="image">
 				<img src="images/industrial/02/ind02000.jpg" alt="">
 			</a>
 			<div class="caption">

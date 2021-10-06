@@ -4,7 +4,6 @@
 	include('template/vivuni.php');
 	include('template/hoteleria.php');
 	include('template/industrial.php');
-	include('template/galeria.php');
 	include('template/contacto.php');
 ?>
 
