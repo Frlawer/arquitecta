@@ -23,12 +23,12 @@
 		<!-- header -->
 			<section class="wrapper style1" id="header">
 				<div class="row">
-					<div class="col-3 col-12-medium" id="logo">
+					<div class="col-3 col-2-large col-12-medium" id="logo">
 						<a href="./">
 							<img src="./images/borgo-c.png">
 						</a>
 					</div>
-					<div class="col-8 col-12-medium" id="nav">
+					<div class="col-9 col-10-large col-12-medium" id="nav">
 						<ul>
 							<li><a href="/">INICIO</a></li>
 							<li><a href="/#nosotros" class="smooth-scroll">ESTUDIO</a></li>
