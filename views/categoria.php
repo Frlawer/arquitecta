@@ -18,24 +18,25 @@ if (isset($_GET['n'])):
 	$imgData = $img->rows;
 
 	?>
-	<!-- Four -->
 	<section class="wrapper style1 align-center" id="categoria">
 		<div class="inner">
 			<h2><?php echo $proyectoData['nombre'] ?></h2>
 			<blockquote><?php echo $proyectoData['resenia'] ?></blockquote>
 		</div>
-		<div class="gallery style2 small lightbox onload-fade-in">
-			<?php
-			foreach ($imgData as $key => $value) { ?>
-			<article>
-				<a href="<?php echo $value['url']?>" class="image">
-					<img src="<?php echo $value['url']?>" alt="Alternate text" />
-				</a>
-				
-			</article>
-			<?php } ?>
+		<div id="image-slider" class="splide inner" data-splide='{"heightRatio":"0.3","perPage":5,"cover": "true"}'>
+			<div class="splide__track">
+				<ul class="splide__list">
+					<?php foreach ($imgData as $key => $value): ?>
+					<li class="splide__slide">
+						<a href="<?php echo $value['url']?>" data-lightbox="roadtrip">
+							<img src="<?php echo $value['url']?>" data-lightbox="roadtrip" />
+						</a>
+					</li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 		</div>
-			
+		<style>.splide__slide img {width: 100%;height: 10rem;}</style>
 	</section>
 	
 <?php

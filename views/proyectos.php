@@ -1,7 +1,7 @@
 <!-- Four -->
-<section class="wrapper style1 align-left" id="categoria">
+<section class="wrapper style1 align-center" id="categoria">
 	<div class="inner">
-		<h2>Proyectos</h2>
+		<h2>PROYECTOS</h2>
 	</div>
 	<div class="gallery style1 big onscroll-fade-in">
 		<article>

@@ -25,27 +25,8 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/splide/dist/js/splide.min.js"></script>
-			<script>
-				new Splide( '.splide', {
-					type   : 'fade',
-					perPage : 1,
-					gap: 0,
-					cover: true,
-					heightRatio: 0.4,
-				} ).mount();
-			</script>
-			<script>
-				document.addEventListener( 'DOMContentLoaded', function () {
-					new Splide( '#card-slider', {
-						perPage    : 1,
-						gap: 0,
-						width : '100vw',
-						height: '100vh',
-						autoplay : true,
-						speed : 800,
-						pauseOnHover : false
-					} ).mount();
-				} );
-			</script>
+			<script src="assets/js/lightbox.js"></script>
+			<link href="assets/css/lightbox.css" rel="stylesheet" />
+			<script>new Splide( '.splide' ).mount();</script>
 	</body>
 </html>

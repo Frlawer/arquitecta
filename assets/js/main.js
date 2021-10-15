@@ -11,6 +11,7 @@
 		$wrapper = $('#wrapper'),
 		$nav = $('#nav'),
 		$header = $('#header'),
+		$wsp = $('#wsp'),
 		$navPanelToggle, $navPanel, $navPanelInner;
 
 	// Breakpoints.
@@ -43,7 +44,7 @@
 
 // Toggle.
 $navPanelToggle = $(
-	'<a href="#navPanel" id="navPanelToggle">Menu</a>'
+	'<a href="#navPanel" id="navPanelToggle" class="icon brands style1 fa-ellipsis-v"><span class="label">Menú</span></a>'
 )
 	.appendTo($wrapper);
 
@@ -97,7 +98,7 @@ $navPanel = $(
 				.removeClass('alt');
 	});
 
-	breakpoints.on('<=small', function() {
+	breakpoints.on('<=medium', function() {
 
 		// Nav -> NavPanel.
 			$navContent.appendTo($navPanelInner);
@@ -108,35 +109,7 @@ $navPanel = $(
 			
 			$nav.find('ul')
 				.addClass('alt');
-
 	});
-
-	// 	// Button.
-	// 	$navPannelToggle = $(
-	// 		'<div id="navButton">' +
-	// 			'<a href="#navPanel" class="toggle">+</a>' +
-	// 		'</div>'
-	// 	)
-	// 		.appendTo($wrapper);
-
-	// // Panel.
-	// 	$navPannel = $(
-	// 		'<div id="navPanel">' +
-	// 			'<nav>' +
-	// 				$('#nav').navList() +
-	// 			'</nav>' +
-	// 		'</div>'
-	// 	)
-	// 		.appendTo($body)
-	// 		.panel({
-	// 			delay: 500,
-	// 			hideOnClick: true,
-	// 			hideOnSwipe: true,
-	// 			resetScroll: true,
-	// 			resetForms: true,
-	// 			target: $body,
-	// 			visibleClass: 'navPanel-visible'
-	// 		});
 
 	// Browser fixes.
 
@@ -448,5 +421,4 @@ $navPanel = $(
 							}, 275);
 
 						});
-
 })(jQuery);
