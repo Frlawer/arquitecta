@@ -6883,19 +6883,31 @@ body.is-preload .items.onload-fade-in > * > .inner {
 .splide {
   font-family: 'Avant Garde';
 }
-.splide h2 {
-  font-size: 4em;
-}
 .splide .caja {
-  display: inline-block;
+  position: relative;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.splide .caja h2 {
+  font-size: 2rem;
+  color: inherit;
+}
+.splide .caja span {
   border: 1px solid #ffffff;
   padding: .5em 1em;
 }
-.splide h2, .splide .caja {
-  color: #ffffff;
-  position: relative;
-  top: 40%;
-  left: 10%;
+@media screen and (min-width: 981px) {
+  .splide .caja {
+    align-items: flex-start;
+    padding: 1em;
+    top: 30%;
+  }
+  .splide .caja h2 {
+    font-size: 4rem;
+  }
 }
 
 /* Nav Panel */
