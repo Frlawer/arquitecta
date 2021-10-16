@@ -26,7 +26,7 @@
                 <li class="splide__slide">
                     <img src="images/slider/slider05.jpg"/>
                     <div class="caja">
-                        <h2>OBRAS VARIAS</h2>
+                        <h2>OBRAS EN EJECUCIÓN</h2>
                         <span>VER MÁS ></span>
                     </div>
                 </li>
