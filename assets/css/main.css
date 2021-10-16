@@ -6904,9 +6904,18 @@ body.is-preload .items.onload-fade-in > * > .inner {
     align-items: flex-start;
     padding: 1em;
     top: 30%;
+    left: 10%;
   }
   .splide .caja h2 {
     font-size: 4rem;
+  }
+}
+@media screen and (min-width: 737px) and (max-width: 980px) {
+  .splide .caja {
+    top: 30%;
+  }
+  .splide .caja h2 {
+    font-size: 3rem;
   }
 }
 
