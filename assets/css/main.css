@@ -6820,25 +6820,10 @@ body.is-preload .items.onload-fade-in > * > .inner {
 }
 #header #logo {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
-@media screen and (max-width: 1280px) {
-  #header #logo {
-    justify-content: center;
-    padding: 0 1em;
-  }
-}
-@media screen and (max-width: 736px) {
-  #header #logo {
-    justify-content: center;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 360px) {
-  #header #logo {
-    justify-content: center;
-    padding: 0;
-  }
+#header #logo img {
+  width: 10rem;
 }
 #header #logo h1 {
   font-size: 1.5em;
@@ -6850,8 +6835,15 @@ body.is-preload .items.onload-fade-in > * > .inner {
 #header #logo a {
   text-decoration: none;
 }
-#header #logo img {
-  width: 10rem;
+@media screen and (min-width: 981px) {
+  #header #logo {
+    padding: 0 1em;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 736px) {
+  #header #logo {
+    padding: 0;
+  }
 }
 #header #nav {
   font-family: "Work Sans", sans-serif;
@@ -6899,23 +6891,25 @@ body.is-preload .items.onload-fade-in > * > .inner {
   border: 1px solid #ffffff;
   padding: .5em 1em;
 }
+@media screen and (min-width: 481px) {
+  .splide .caja {
+    align-items: center;
+    padding: 1em;
+    top: 30%;
+  }
+  .splide .caja h2 {
+    font-size: 3rem;
+  }
+}
 @media screen and (min-width: 981px) {
   .splide .caja {
     align-items: flex-start;
     padding: 1em;
     top: 30%;
-    left: 10%;
+    left: 5%;
   }
   .splide .caja h2 {
-    font-size: 4rem;
-  }
-}
-@media screen and (min-width: 737px) and (max-width: 980px) {
-  .splide .caja {
-    top: 30%;
-  }
-  .splide .caja h2 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 
