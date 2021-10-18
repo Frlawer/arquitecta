@@ -6823,7 +6823,11 @@ body.is-preload .items.onload-fade-in > * > .inner {
   justify-content: center;
 }
 #header #logo img {
+<<<<<<< HEAD
   width: 10rem;
+=======
+  width: 100%;
+>>>>>>> 02logo
 }
 #header #logo h1 {
   font-size: 1.5em;
@@ -6837,12 +6841,22 @@ body.is-preload .items.onload-fade-in > * > .inner {
 }
 @media screen and (min-width: 981px) {
   #header #logo {
+<<<<<<< HEAD
     padding: 0 1em;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 736px) {
   #header #logo {
     padding: 0;
+=======
+    justify-content: flex-start;
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 980px) {
+  #header #logo {
+    width: 90%;
+>>>>>>> 02logo
   }
 }
 #header #nav {
