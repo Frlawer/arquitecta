@@ -6823,7 +6823,7 @@ body.is-preload .items.onload-fade-in > * > .inner {
   justify-content: center;
 }
 #header #logo img {
-  width: 100%;
+  width: 10rem;
 }
 #header #logo h1 {
   font-size: 1.5em;
@@ -6837,13 +6837,12 @@ body.is-preload .items.onload-fade-in > * > .inner {
 }
 @media screen and (min-width: 981px) {
   #header #logo {
-    justify-content: flex-start;
-    width: 10rem;
+    padding: 0 1em;
   }
 }
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 481px) and (max-width: 736px) {
   #header #logo {
-    width: 90%;
+    padding: 0;
   }
 }
 #header #nav {
