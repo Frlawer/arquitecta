@@ -6823,15 +6823,7 @@ body.is-preload .items.onload-fade-in > * > .inner {
   justify-content: center;
 }
 #header #logo img {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  width: 10rem;
-=======
-  width: 100%;
->>>>>>> 02logo
-=======
-  width: 10rem;
->>>>>>> 02logo
+  width: 90%;
 }
 #header #logo h1 {
   font-size: 1.5em;
@@ -6845,30 +6837,13 @@ body.is-preload .items.onload-fade-in > * > .inner {
 }
 @media screen and (min-width: 981px) {
   #header #logo {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    padding: 0 1em;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 736px) {
-  #header #logo {
-    padding: 0;
-=======
     justify-content: flex-start;
     width: 10rem;
-=======
-    padding: 0 1em;
->>>>>>> 02logo
   }
 }
-@media screen and (min-width: 481px) and (max-width: 736px) {
+@media screen and (max-width: 980px) {
   #header #logo {
-<<<<<<< HEAD
     width: 90%;
->>>>>>> 02logo
-=======
-    padding: 0;
->>>>>>> 02logo
   }
 }
 #header #nav {
