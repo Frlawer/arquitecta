@@ -9,9 +9,9 @@
 				<img src="images/viviendas/01/viv01000.jpg" alt="">
 			</a>
 			<div class="caption">
-				<h3>Diseño de Viviendas Unifamiliares</h3>
+				<h3>VIVIENDAS UNIFAMILIARES</h3>
 				<ul class="actions fixed">
-					<li><a href="?view=categoria&id=1"><span class="button small">Detalles</span></a></li>
+					<li><a href="?view=categoria&id=1"><span class="button fit small">Detalles</span></a></li>
 				</ul>
 			</div>
 		</article>
@@ -20,9 +20,9 @@
 				<img src="images/hoteles/01/hotel01000.jpg" alt="">
 			</a>
 			<div class="caption">
-				<h3>Hotelería</h3>
+				<h3>HOTELES</h3>
 				<ul class="actions fixed">
-					<li><a href="?view=categoria&id=2"><span class="button small">Detalles</span></a></li>
+					<li><a href="?view=categoria&id=2"><span class="button fit small">Detalles</span></a></li>
 				</ul>
 			</div>
 		</article>
@@ -31,9 +31,9 @@
 				<img src="images/industrial/02/ind02000.jpg" alt="">
 			</a>
 			<div class="caption">
-				<h3>Industria</h3>
+				<h3>INDUSTRIA</h3>
 				<ul class="actions fixed">
-					<li><a href="?view=categoria&id=3"><span class="button small">Detalles</span></a></li>
+					<li><a href="?view=categoria&id=3"><span class="button fit small">Detalles</span></a></li>
 				</ul>
 			</div>
 		</article>
