@@ -9,11 +9,11 @@
 		<title>Borgo Arquitectura</title>
 	<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="\images\Isologotipo-negro.png" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="icon" href="./images/Isologotipo-negro.png" />
+		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 		<!-- Link to the file hosted on your server, -->
-		<link rel="stylesheet" href="assets/splide/dist/css/splide.min.css">
+		<link rel="stylesheet" href="./assets/splide/dist/css/splide.min.css">
 	</head>
 	<body class="is-preload">
 
