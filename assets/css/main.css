@@ -6816,7 +6816,7 @@ body.is-preload .items.onload-fade-in > * > .inner {
 #header .row {
   margin: .5em 0;
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
 }
 #header #logo {
   display: flex;
