@@ -6,28 +6,28 @@
                     <img src="images/slider/slider01.jpg"/>
                     <div class="caja">
                         <h2>VIVIENDAS UNIFAMILIARES</h2>
-                        <span>VER MÁS ></span>
+                        <a href="?view=categoria&id01"><span>VER MÁS ></span></a>
                     </div>
                 </li>
                 <li class="splide__slide">
                     <img src="images/slider/slider08.jpg"/>
                     <div class="caja">
                         <h2>HOTELES</h2>
-                        <span>VER MÁS ></span>
+                        <a href="?view=categoria&id02"><span>VER MÁS ></span></a>
                     </div>
                 </li>
                 <li class="splide__slide">
                     <img src="images/slider/slider12.jpg"/>
                     <div class="caja">
                         <h2>INDUSTRIA</h2>
-                        <span>VER MÁS ></span>
+                        <a href="?view=categoria&id03"><span>VER MÁS ></span></a>
                     </div>
                 </li>
                 <li class="splide__slide">
                     <img src="images/slider/slider13.jpg"/>
                     <div class="caja">
                         <h2>OBRAS EN EJECUCIÓN</h2>
-                        <span>VER MÁS ></span>
+                        <a href="?view=categoria&id04"><span>VER MÁS ></span></a>
                     </div>
                 </li>
             </ul>

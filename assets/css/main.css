@@ -6888,7 +6888,11 @@ body.is-preload .items.onload-fade-in > * > .inner {
   font-size: 2rem;
   color: inherit;
 }
-.splide .caja span {
+.splide .caja a {
+  text-decoration: none;
+  color: white;
+}
+.splide .caja a span {
   border: 1px solid #ffffff;
   padding: .5em 1em;
 }
