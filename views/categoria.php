@@ -23,7 +23,7 @@ if (isset($_GET['n'])):
 			<h2><?php echo $proyectoData['nombre'] ?></h2>
 			<blockquote><?php echo $proyectoData['resenia'] ?></blockquote>
 		</div>
-		<div id="image-slider" class="splide inner" data-splide='{"heightRatio":"0.3","perPage":5,"cover": "true"}'>
+		<div id="image-slider" class="splide inner" data-splide='{"heightRatio":"0.3","perPage":3,"cover": "true"}'>
 			<div class="splide__track">
 				<ul class="splide__list">
 					<?php foreach ($imgData as $key => $value): ?>
@@ -58,22 +58,24 @@ elseif(isset($_GET['id'])):
 			<h2><?php echo ucfirst($categoria->rows[0]['nombre']) ?></h2>
 			<p>Selecciona para ver más fotos</p>
 		</div>
-		<div class="items style1 small onload-fade-in">
+		<div class="items style1 small onload-fade-in" id="subCat">
 			<?php foreach ($proyectoData as $key => $value) : ?>
                 <?php 
                 // creo otro objeto con 1 solo llamado a la imagen principal
                 $img = new Img();
                 $img->getImg($value['categoria_id'], $value['subCategoria']);
+				$urlSubcategoria = "?view=categoria&id=" . $value['categoria_id'] . "&n=" . $value['subCategoria'];
+				$urlImg = $img->rows[0]['url'];
                     ?>
 				<section>
-					<a href="?view=categoria&id=<?php echo $value['categoria_id'];?>&n=<?php echo $value['subCategoria']; ?>">
-						<img src="<?php echo $img->rows[0]['url']?>" width="100%" alt="<?php echo $value['nombre'] ?>" />
+					<a href="<?php echo $urlSubcategoria; ?>">
+						<img src="<?php echo $urlImg; ?>" width="100%" alt="<?php echo $value['nombre'] ?>" />
 					</a>
 					<h3>
-				<?php echo $value['nombre']; ?>
+						<a href="<?php echo $urlSubcategoria; ?>"><?php echo $value['nombre']; ?></a>
 					</h3>
 					<p>
-						<?php echo mb_substr($value['resenia'], 0, 50, 'UTF-8')."..."; ?>
+						<a href="<?php echo $urlSubcategoria;?>"><?php echo mb_substr($value['resenia'], 0, 80, 'UTF-8')."..."; ?></a>
 					</p>
 				</section>
 			<?php endforeach; ?>
