@@ -37,6 +37,18 @@
 				</ul>
 			</div>
 		</article>
+		</article>
+		<article>
+			<a href="?view=categoria&id=4" class="image">
+				<img src="images/varios/01/varios0101.jpg" alt="">
+			</a>
+			<div class="caption">
+				<h3>VARIOS</h3>
+				<ul class="actions fixed">
+					<li><a href="?view=categoria&id=4"><span class="button fit small">Detalles</span></a></li>
+				</ul>
+			</div>
+		</article>
 		
 	</div>
 </section>
