@@ -118,6 +118,9 @@ class Proyecto extends DBconn {
             case 3:
                 $nombre = 'hoteles';
                 break;
+            case 4:
+                $nombre = 'varios';
+                break;
         }
         return $nombre;
     }
