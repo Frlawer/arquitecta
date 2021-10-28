@@ -16,17 +16,17 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/splide/dist/js/splide.min.js"></script>
-			<script src="assets/js/lightbox.js"></script>
-			<link href="assets/css/lightbox.css" rel="stylesheet" />
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+			<script src="/assets/splide/dist/js/splide.min.js"></script>
+			<script src="/assets/js/lightbox.js"></script>
+			<link href="/assets/css/lightbox.css" rel="stylesheet" />
 			<script>new Splide( '.splide' ).mount();</script>
 	</body>
 </html>
