@@ -3,10 +3,11 @@
                 <footer class="wrapper style1 align-center">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="#" class="icon brands style2 fa-whatsapp"><span class="label">Whatsapp</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://wa.me/5492944394034?text=Hola%20Julieta%20Borgonobo,%20tome%20tu%20contacto%20desde%20la%20web%20de%20borgoarquitectura.com.ar" class="icon brands style2 fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+								<li><a href="https://www.facebook.com/BORGO-Arquitecturash-108458558274243/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://instagram.com/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://linkedin.com/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="tel:+54902944394034" class="icon solid style2 fa-phone"><span class="label">Teléfono</span></a></li>
 							</ul>
 							<p>&copy; Borgo Arquitectura - Todos los derechos reservados.</p>
 						</div>
