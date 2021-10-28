@@ -4,10 +4,10 @@
 		<title>Borgo Arquitectura</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="./assets/css/main.css" />
-		<link rel="icon" href="./images/Isologotipo-negro.png" />
-		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
-		<link rel="stylesheet" href="./assets/splide/dist/css/splide.min.css">
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="icon" href="/images/Isologotipo-negro.png" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="/assets/splide/dist/css/splide.min.css">
 	</head>
 	<body class="is-preload">
 
@@ -18,8 +18,8 @@
 			<section class="wrapper style1" id="header">
 				<div class="row">
 					<div class="col-3 col-2-large col-12-medium" id="logo">
-						<a href="./">
-							<img src="./images/borgo-c.png">
+						<a href="/">
+							<img src="/images/borgo-c.png">
 						</a>
 					</div>
 					<div class="col-9 col-10-large col-12-medium" id="nav">
