@@ -64,7 +64,7 @@ elseif(isset($_GET['id'])):
                 // creo otro objeto con 1 solo llamado a la imagen principal
                 $img = new Img();
                 $img->getImg($value['categoria_id'], $value['subCategoria']);
-				$urlSubcategoria = "?view=categoria&id=" . $value['categoria_id'] . "&n=" . $value['subCategoria'];
+				$urlSubcategoria = "/categoria/" . $value['categoria_id'] . "/" . $value['subCategoria'];
 				$urlImg = $img->rows[0]['url'];
                     ?>
 				<section>
